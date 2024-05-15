@@ -1,0 +1,13 @@
+/* styles.css */
+
+/* Reset default styles */
+body, h1, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Add your custom styles here */
+.container {
+    display: flex;
+    /* Add additional flexbox properties as needed */
+}
