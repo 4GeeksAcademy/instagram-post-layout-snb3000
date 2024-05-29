@@ -1,13 +1,71 @@
-/* styles.css */
-
-/* Reset default styles */
-body, h1, p {
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fafafa;
     margin: 0;
-    padding: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
 }
 
-/* Add your custom styles here */
-.container {
+.post {
+    width: 465px;
+    background: white;
+    border: 1px solid #dbdbdb;
+    margin-top: 20px;
+}
+
+.post-header, .post-icons, .likes, .caption {
+    padding: 10px;
+}
+
+.post-header {
     display: flex;
-    /* Add additional flexbox properties as needed */
+    align-items: center;
+    justify-content: space-between;
+    font-size: 14px;
+}
+
+.profile-pic {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.post-image {
+    width: 100%;
+    height: auto;
+}
+
+.post-icons {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px; /* Increased icon size */
+}
+
+.post-icons i {
+    cursor: pointer;
+    margin-right: 20px; /* Increased spacing between icons */
+}
+
+.post-icons i:last-child {
+    margin-right: 0; /* Remove margin from the last icon */
+}
+
+.post-icons .right-icon {
+    margin-left: auto; /* This pushes the bookmark icon to the far right */
+}
+
+.likes, .caption {
+    font-size: 14px;
+}
+
+.caption {
+    color: #262626;
+    line-height: 1.5;
+}
+
+.right {
+    font-weight: bold;
+    cursor: pointer;
 }
